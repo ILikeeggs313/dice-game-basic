@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing rendering of the cell component matches snapshot as lit up 1`] = `<DocumentFragment />`;
+
+exports[`Testing rendering of the cell component matches snapshot when not lit 1`] = `<DocumentFragment />`;
