@@ -38,6 +38,13 @@ describe("Testing rendering of board element, snapshots, etc.", () => {
             expect(cell).not.toHaveClass("Cell-lit");
           }
         });
+    })
+    test("Clicking the board causes the message saying you won to pop up", () => {
+        const{queryByText, getAllByRole} = render(
+            <Board nrows = {2} ncols = {3} chanceLightStartsOn = {1} />
+        )
+        //if the game isn't won
+        expect(queryByText("You won !")).not.toBeInTheDocument();
     })    
 
 })
